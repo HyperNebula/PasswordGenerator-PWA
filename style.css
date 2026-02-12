@@ -127,3 +127,30 @@ footer a {
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
 }
+
+#installButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: var(--text-color);
+    color: var(--button-color);
+
+    font-size: max(16px, 1vw);
+    font-weight: bold;
+    
+    cursor: pointer;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+
+    transition: background-color 0.2s;
+}
+
+#installButton:hover {
+    background-color: var(--secondary-text-color);
+}
