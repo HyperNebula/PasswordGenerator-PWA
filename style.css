@@ -14,6 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     
+    
     margin: 4vw;
 }
 
@@ -22,9 +23,9 @@ h1 {
     margin-bottom: max(60px, 4vw);
 }
 
-button {
+#generate-btn {
     padding: 10px 20px;
-    margin: 10px;
+    margin-top: 30px;
 
     border: none;
     border-radius: 6px;
@@ -36,12 +37,45 @@ button {
     font-weight: bold;
     
     cursor: pointer;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+
+    transition: background-color 0.2s, color 0.2s;
 }
 
-button:hover {
+#generate-btn:hover {
     background-color: var(--secondary-color);
     color: var(--third-color);
 }
 
+.display-container {
+    border: 2px solid var(--secondary-color);
+    border-radius: 6px;
+    padding: 12px 20px;
+    padding-right: 8px;
+    background-color: var(--third-color);
 
+    display: flex;
+    align-items: center;
 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+}
+
+.display-container input {
+    border: none;
+    margin: none;
+    background-color: var(--third-color);
+}   
+
+.display-container button {
+    border: none;
+    margin: none;
+    padding: none;
+
+    font-size: max(16px, 1vw);
+    font-weight: bold;
+
+    color: var(--secondary-color);
+
+    cursor: pointer;
+}   
