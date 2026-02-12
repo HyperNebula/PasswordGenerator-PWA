@@ -8,6 +8,7 @@
 
         <title>Simple Password Generator</title>
         <link rel="icon" href="favicon.png" type="image/png">
+        <link rel="manifest" href="manifest.json">
 
         <link rel="stylesheet" href="style.css">
     
@@ -25,5 +26,15 @@
         <button id="generate-btn" onclick="generatePassword()">Generate Password</button>
         
         <script src="script.js"></script>
+
+        <script type="text/javascript">
+
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register("/service-worker.js")
+                .then(() => console.log("Service worker registered"))
+                .catch((error) => console.log("Service worker failed", error));
+            }
+
+        </script>
     </body>
 </html>
