@@ -51,8 +51,7 @@ h1 {
 .display-container {
     border: 2px solid var(--secondary-color);
     border-radius: 6px;
-    padding: 12px 20px;
-    padding-right: 8px;
+    padding: none;
     background-color: var(--third-color);
 
     display: flex;
@@ -64,13 +63,23 @@ h1 {
 .display-container input {
     border: none;
     margin: none;
+
+    padding: 12px 20px;
+
     background-color: var(--third-color);
 }   
 
 .display-container button {
     border: none;
     margin: none;
-    padding: none;
+    padding: 12px 8px;
+
+    
+    border-left: 1px solid;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+
+    background-color: var(--third-color);
 
     font-size: max(16px, 1vw);
     font-weight: bold;
@@ -78,4 +87,13 @@ h1 {
     color: var(--secondary-color);
 
     cursor: pointer;
-}   
+
+}
+
+.display-container button:hover {
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
