@@ -1,5 +1,11 @@
 function handleCopy() {
-    navigator.clipboard.writeText(document.getElementById('password-display').value).then(() => {
+    const passwordCopy = document.getElementById('password-display').value;
+
+    if (!passwordCopy) {
+        return;
+    }
+
+    navigator.clipboard.writeText(passwordCopy).then(() => {
         alert('Password copied to clipboard!');
     });
 }
