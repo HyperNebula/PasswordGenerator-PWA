@@ -6,7 +6,7 @@ function handleCopy() {
     }
 
     navigator.clipboard.writeText(passwordCopy).then(() => {
-        alert('Password copied to clipboard!');
+        //alert('Password copied to clipboard!');
     });
 }
 
