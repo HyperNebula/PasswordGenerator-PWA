@@ -28,8 +28,12 @@ h1 {
 
 h2 {
     color: var(--secondary-text-color);
+    
     margin-top: 0;
     margin-bottom: max(60px, 6vw);
+    
+    text-align: center;
+    font-size: max(20px, 1.8vw);
 }
 
 #generate-btn {
