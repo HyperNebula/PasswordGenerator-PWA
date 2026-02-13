@@ -77,6 +77,11 @@ footer a {
     color: var(--button-color);
 }
 
+#generate-btn:active {
+    background-color: var(--main-color);
+    color: var(--button-color);
+}
+
 .display-container {
     border: 2px solid var(--secondary-color);
     border-radius: 6px;
@@ -123,6 +128,14 @@ footer a {
 
 .display-container button:hover {
     background-color: var(--secondary-color);
+    color: var(--button-color);
+    
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.display-container button:active {
+    background-color: var(--main-color);
     color: var(--button-color);
     
     border-bottom-right-radius: 0px;
