@@ -72,9 +72,11 @@ footer a {
     transition: background-color 0.2s, color 0.2s;
 }
 
-#generate-btn:hover {
-    background-color: var(--secondary-color);
-    color: var(--button-color);
+@media (hover: hover) {
+    #generate-btn:hover {
+        background-color: var(--secondary-color);
+        color: var(--button-color);
+    }
 }
 
 #generate-btn:active {
@@ -126,12 +128,14 @@ footer a {
 
 }
 
-.display-container button:hover {
-    background-color: var(--secondary-color);
-    color: var(--button-color);
-    
-    border-bottom-right-radius: 0px;
-    border-top-right-radius: 0px;
+@media (hover: hover) {
+    .display-container button:hover {
+        background-color: var(--secondary-color);
+        color: var(--button-color);
+        
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+    }
 }
 
 .display-container button:active {
@@ -165,6 +169,8 @@ footer a {
     transition: background-color 0.2s;
 }
 
-#installButton:hover {
-    background-color: var(--secondary-text-color);
+@media (hover: hover) {
+    #installButton:hover {
+        background-color: var(--secondary-text-color);
+    }
 }
