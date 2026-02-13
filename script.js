@@ -30,7 +30,7 @@ let deferredEvent;
 const installButton = document.getElementById("installButton");
 
 window.addEventListener("beforeinstallprompt", (e) => {
-    e.preventDefault();
+    //e.preventDefault();
     deferredEvent = e;
 
     installButton.hidden = false;
@@ -39,9 +39,10 @@ window.addEventListener("beforeinstallprompt", (e) => {
 function installPWA() {
     if (deferredEvent) {
         deferredEvent.prompt();
-
-        deferredEvent = null;
-
-        installButton.hidden = true;
     }
 }
+
+window.addEventListener("appinstalled", () => {
+    installButton.hidden = true;
+    deferredEvent = null;
+});
